@@ -49,7 +49,7 @@ class NovaMemory:
         self.memory[key] = value
         self.save_memory()
 
-        return f"I'll remember that, Chris."
+        return f"I'll remember that."
 
     def recall(self, key):
 
@@ -62,9 +62,9 @@ class NovaMemory:
             del self.memory[key]
             self.save_memory()
 
-            return f"I've forgotten that, Chris."
+            return f"I've forgotten that."
 
-        return f"I don't have anything stored about that, Chris."
+        return f"I don't have anything stored about that."
 
     def get_all_memory(self):
 
