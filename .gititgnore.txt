@@ -1,0 +1,31 @@
+
+# Python environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Vosk speech recognition model
+vosk-model/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Local configuration - inspect before publishing
+.env.config.py
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Personal Nova data
+data/memory.json
+data/nova chats.json
