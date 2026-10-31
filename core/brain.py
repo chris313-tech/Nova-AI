@@ -6,7 +6,7 @@ class NovaBrain:
 
     def __init__(self):
         self.name = "Nova"
-        self.user_name = "Chris"
+        self.user_name = "User"
 
     def think(self, text):
 
@@ -20,7 +20,7 @@ class NovaBrain:
             "hey nova",
             "hello nova"
         ]):
-            return "Hello Chris. How can I help you?"
+            return f"Hello {self.user_name}. How can I help you?"
 
         # Nova's name
         if (
@@ -39,7 +39,7 @@ class NovaBrain:
             or "do you know my name" in text
             or "who am i" in text
         ):
-            return "Your name is Chris."
+            return "Your name is {self.user_name."
 
         # How Nova is doing
         if (
