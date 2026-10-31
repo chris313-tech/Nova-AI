@@ -39,7 +39,7 @@ class NovaBrain:
             or "do you know my name" in text
             or "who am i" in text
         ):
-            return "Your name is {self.user_name."
+            return f"Your name is {self.user_name}."
 
         # How Nova is doing
         if (
@@ -47,7 +47,7 @@ class NovaBrain:
             or "how are you doing" in text
             or "how do you feel" in text
         ):
-            return "I'm doing great, Chris. Thanks for asking."
+            return "I'm doing great. Thanks for asking."
 
         # Remember something
         if (
@@ -55,7 +55,7 @@ class NovaBrain:
             or text.startswith("remember this")
             or text.startswith("remember")
         ):
-            return "I can remember that, Chris."
+            return "I can remember that."
 
         # Ask Nova to recall something
         if (
@@ -63,7 +63,7 @@ class NovaBrain:
             or text.startswith("do you remember")
             or text.startswith("what did i tell you")
         ):
-            return "I can check my memory, Chris."
+            return "I can check my memory."
 
         # Forget something
         if (
@@ -71,7 +71,7 @@ class NovaBrain:
             or text.startswith("forget this")
             or text.startswith("forget")
         ):
-            return "I can forget that, Chris."
+            return "I can forget that."
 
         # Thanks
         if any(phrase in text for phrase in [
@@ -80,7 +80,7 @@ class NovaBrain:
             "thanks nova",
             "thank you nova"
         ]):
-            return "You're welcome, Chris. I'm always happy to help."
+            return "You're welcome. I'm always happy to help."
 
         # Goodbye
         if any(phrase in text for phrase in [
