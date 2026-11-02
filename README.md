@@ -52,6 +52,59 @@ Nova-AI/
 └── StartNova.vbs
 ```
 
+		DOWNLOADING NOVA AI
+
+1. First download the zip file in GitHub
+
+2. Download Python - 3.13- https://www.python.org/downloads/
+
+3. Download ollama - https://ollama.com/download
+
+4. After ollama is installed
+     - Open it "It should run in the background, usually showing an Ollama icon in the system tray."
+     - Search in the search bar to see if its installed
+     - Open cmd and run "ollama --version" to check if its installed" if it displays a version number, ollama is installed correctly.
+
+5. Extract the Nova AI zip file
+
+6. After that locate the folder of the extracted folder. (Click the address bar at the top of file explorer and type cmd and press enter)
+
+7. CMD should open directly inside the Nova AI folder
+
+8. Run - "python -m venv .venv"
+
+9. Activate the environment - .venv\Scripts\activate
+
+10. Install dependencies ( run in the same cmd) - python -m pip install --upgrade pip
+pip install -r requirements.txt
+
+11. Install Vosk (Offline Speech Recognition) - run pip install vosk
+
+12. Download the Vosk Speech Model 
+    -Visit https://alphacephei.com/vosk/models
+    -Download vosk-model-small-en-us-0.15.
+    -Extract the downloaded ZIP file.
+    -Rename the extracted folder to vosk-model.
+    -Move the vosk-model folder into the main Nova AI folder, alongside main.
+
+13. Wait until the installation finishes
+     
+14. Download Nova's AI model - Run in cmd "ollama pull qwen2.5:3b".
+     
+15. Test the model - Run in cmd "ollama run qwen2.5:3b"
+
+16. Type - "Hello, who are you?"
+
+17. If it responds, the model is working. Type "/bye" to close it.
+
+18. Inside the nova folder locate - "StartNova.vbs" or " "StartNova.bat" (That's the launcher)
+
+19. You can create shortcut on the desktop for that.
+
+
+OR           
+
+
 Download and Installation
 
 1. Download Nova AI
